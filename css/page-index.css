@@ -1,0 +1,317 @@
+/*设置body头部背景*/
+body{
+	background: url(../img/bd-bg.png) repeat-x;
+}
+
+/*固定元素宽度和居中*/
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.header{
+	/*background-color:#bfa;*/
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+
+/*设置logo位置*/
+.logo{
+	margin-left: 15px;
+	
+}
+
+/*设置logo导航部分*/
+.nav {
+	
+	float:right;
+	margin-top: 22px;
+}
+
+/*设置导航条里无序列表样式*/
+.nav li{
+	float: left;
+	padding:0 10px 8px;
+	border-left:1px #d6d6d6 dotted;
+	
+}
+
+/*设置导航条里超链接文字样式*/
+.nav a{
+	/*去除下划线*/
+	text-decoration: none;
+	color: #666;
+	font:bold 14px georgia;
+}
+
+/*设置鼠标效果*/
+.nav a:hover{
+	color:#a1a1a1;
+	/*text-decoration: underline;*/
+	/*CSS中通过设置下边框给超链接设置不同颜色的下划线*/
+	border-bottom: 1px solid red; 
+}
+
+/*设置p标签里的字体样式*/
+.nav p{
+	color:#b7b7b7;
+	font:11px tahoma;
+}
+
+/*设置banner图样式*/
+.banner{
+	height: 356px;
+	/*不重复，底部居中*/
+	background: url(../img/banner/banner-bg.png) no-repeat bottom center;
+	position: relative;
+}
+
+/*设置导航按钮*/
+.pointer a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-left: 4px;
+	background: url(../img/pointer.png) no-repeat;
+}
+.pointer a:hover,
+.pointer .active{
+	background:url(../img/pointer-active.png) ;
+}
+
+/*定位*/
+.pointer{
+	position: absolute;
+	bottom: 28px;
+	left:15px;
+}
+
+/*content部分*/
+.content h1{
+	text-align: center;
+	margin-bottom: 38px;
+	font:bold 24px Georgia;
+	padding:6px 0 20px 0;
+	background: url(../img/line.png) no-repeat bottom center;
+}
+
+/*三个栏目内容div设置。注意：父子元素必须空格隔开*/
+.content .pl,.content .cs,.content .uc,
+.contact .sc,.contact .co,.contact .nu
+{
+	float: left;
+	width: 300px;
+	
+	
+	
+}
+
+.content .cs ,.contact .co{
+	margin: 0 20px;
+}
+
+.content h2{
+	color:#11719e;
+	font:21px georgia;
+}
+
+.content .p1{
+	color:#a7a7a7;
+	font:12px Helvetica;
+}
+
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat  ;
+	margin:16px 0px 10px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+
+.content .p2{
+	height: 92px;
+	color:#3e3e3e;
+	font:13px helvetica;
+	word-spacing:2px;
+}
+
+
+/*设置按钮样式*/
+.content .lm{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png);
+	text-decoration: none;
+	font:12px/40px helvetica;
+	/*首行缩进*/
+	text-indent: 1em;
+	
+	color: #016999;
+	margin-bottom: 35px;
+}
+
+/*设置contact上边的背景*/
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+/*
+.contact .sc,.contact .co,.contact .nu{
+	height: 500px;
+	background-color: yellow;
+	
+}*/
+
+
+.contact .txt{
+	width: 276px;
+	height: 33px;
+	background: url(../img/input.png) no-repeat ; 
+	/*单独为IE6设置,背景不随元素滚动*/
+	_background-attachment: fixed;
+	/*去除边框*/
+	border:none;
+	/*去除滚动条*/
+	overflow:auto;
+	
+	margin-bottom: 16px;
+	line-height:33px;
+	padding: 0 10px;
+}
+
+.contact .tarea{
+	width: 276px;
+	height: 114px;
+	border: none;
+	background: url(../img/textarea.png) no-repeat;
+	/*设定文本域不能调整大小*/
+	resize:none;
+	/*IE6和IE8中自带滚动条，去除*/
+	overflow: auto;
+	margin: 0;
+	padding: 10px;
+}
+
+.contact .btn2{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png);
+	border:none;
+	margin:11px 0 23px;
+	padding: 0;
+	
+	color: white;
+	font: 13px georgia;
+	text-align: left;
+	text-indent: 1em;s
+}
+
+
+.contact h2{
+	color: #444;
+	font:18px/1 georgia;
+	border-bottom: 1px dashed #d3d3d3;
+	padding:44px 0 10px;
+	margin-bottom: 15px;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clearfix{
+	zoom:1;
+}
+
+.sc .p3{
+	color: #444;
+	font:12px/1 Helvetica;
+}
+
+.sc .icon{
+	font-size:0;
+	margin-top: 4px;
+}
+
+.sc .icon a{
+	margin-right:6px;
+}
+
+.sc .nl{
+
+	padding: 34px 0 10px;
+	font:bold 18px/1 "gill sans mt";
+	
+}
+
+.sc .txt{
+	margin-top: 15px;
+	/*为IE6设置*/
+	_margin-top: 18px;
+	margin-bottom: 0;
+}
+
+
+.nu p{
+	color:#444444;
+	font:12px/1 helvetica;
+	height: 58px;
+	border-bottom: 1px dashed #d3d3d3;
+	padding-bottom: 9px;
+	margin-bottom:14px;
+
+}
+
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+
+/*
+ p与.no-margin没有空格，有空格的话表示父子元素
+ 子选择器（child selector）仅是指它的直接后代，或者你可以理解为作用于子元素的第一代后代。而后代选择器是作用于所有子后代元素。后代选择器通过空格来进行选择，而子选择器是通过“>”进行选择。
+ */
+.nu p.no-margin{
+	margin: 0;
+}
+
+
+/*设置脚步背景*/
+.footer{
+	height: 173px;
+	background-color: #333;
+	border-top: 10px solid #4c4c4c;
+	
+}
+
+
+.copy{
+	float: right;
+	margin-right: 23px;
+	margin-top: 18px;
+}
+
+.footer a,.footer p{
+	text-decoration: none;
+	color: #999;
+	font:11px helvetica;
+}
+
+.footer a:hover{
+	background-color:red;
+}
+
+
+.footer .w{
+	padding: 18px;
+}
+
+.footer p{
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 23px;
